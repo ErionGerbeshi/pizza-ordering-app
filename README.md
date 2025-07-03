@@ -14,8 +14,6 @@ A responsive and interactive Pizza Ordering App built with **React.js**. Users c
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ![Pizza App Home Page](screenshots/pizza-homepage.png)
 
 ## 🚀 Features
