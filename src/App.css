@@ -1,0 +1,348 @@
+html,
+body {
+  background: #fff8ef;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+body,
+#root,
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.pizza-list-container {
+  background: transparent !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1 0 auto;
+  padding-bottom: 40px;
+  position: relative;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.App-title {
+  margin-top: 45px;
+  color: #ff6600;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.pizza-grid {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.pizza-card {
+  position: relative;
+  border-radius: 18px;
+  width: 210px;
+  height: 330px;
+  border: 2px solid #f0a06aa4;
+  box-shadow: 0 8px 32px rgba(255, 102, 0, 0.1);
+  background: rgba(245, 215, 168, 0.519); /* TRANSPARENT PEACH! */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.pizza-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(255, 102, 0, 0.18);
+}
+
+.pizza-image {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.pizza-info {
+  color: #ff6600;
+  width: 100%;
+  padding: 30px 15px 0 15px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.pizza-info h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.pizza-info .pizza-price {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #ff6600;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.pizza-info p {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc34d;
+  border: none;
+  color: white;
+  padding: 7px 28px;
+  font-size: 0.88rem; /* Much smaller */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(255, 195, 77, 0.13);
+  font-family: "Bradley Hand", "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.add-button:hover {
+  background-color: #ff6600;
+}
+
+.app-footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 120px;
+  margin-top: 30px;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.bucket-footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.bucket-card {
+  width: 340px;
+  min-height: 190px;
+  border-radius: 16px;
+  border: 2px solid #f0a06aa4;
+  background: rgba(245, 215, 168, 0.519); /* TRANSPARENT PEACH! */
+  box-shadow: 0 8px 32px rgba(255, 102, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  padding: 24px 18px 18px 18px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.bucket-card .footerTitle {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ff6600;
+  text-align: center;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.bucket-list {
+  width: 100%;
+  max-height: 120px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Hide or clean up the scrollbar background */
+.bucket-list::-webkit-scrollbar {
+  width: 10px;
+  background: transparent; /* removes background color */
+}
+
+.bucket-list::-webkit-scrollbar-thumb {
+  background: #ffcc99; /* Or use #ff6600 for orange thumb */
+  border-radius: 6px;
+}
+
+.bucket-list::-webkit-scrollbar-track {
+  background: transparent; /* removes track background */
+  border-radius: 6px;
+}
+
+/* Optional: Remove arrows (up/down buttons) on Chrome/Safari */
+.bucket-list::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  background: transparent;
+}
+
+.bucket-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 3px 0;
+  border-bottom: 1px dashed #ffc34d;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.remove-button {
+  background: #ffefc7;
+  color: #ff6600;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 3px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.remove-button:hover {
+  background: #ff6600;
+  color: #fff;
+}
+
+.bucket-total {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 18px;
+  font-size: 19px;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.priceColor {
+  color: #ff6600;
+  font-size: 1.22rem;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.bucket-empty {
+  font-size: 15px;
+  color: #aaa;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+.footerTitle {
+  color: #ff6600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .bucket-card {
+    width: 92vw;
+    min-width: 240px;
+    max-width: 95vw;
+  }
+  .pizza-grid {
+    gap: 14px;
+  }
+  .pizza-list-container {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .App-title {
+    font-size: 1.5rem;
+  }
+  .pizza-grid {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bucket-card {
+    width: 95vw;
+    margin-top: 18px;
+  }
+  .pizza-card {
+    width: 94vw;
+    height: 300px;
+  }
+  .pizza-list-container {
+    padding-bottom: 40px;
+  }
+  .app-footer {
+    min-height: 140px;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("./Background1.png") center center no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 0;
+  pointer-events: none;
+}
