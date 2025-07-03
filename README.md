@@ -8,10 +8,13 @@ A responsive and interactive Pizza Ordering App built with **React.js**. Users c
 
 “A short demo of this app is available on Loom.”
 
-▶️ [Watch Project Walkthrough on Loom](https://www.loom.com/share/50ad948e035b42e9befa027ee940d3e9?sid=0fb299bb-cdb7-4801-a42b-15b5e7ae7762)  
-_(Replace with your actual Loom link)_
+▶️ [Watch Project Walkthrough on Loom](https://www.loom.com/share/50ad948e035b42e9befa027ee940d3e9?sid=0fb299bb-cdb7-4801-a42b-15b5e7ae7762)
 
 ---
+
+## 📸 Screenshots
+
+Pizza App Home Page ("C:\Users\Admin\Desktop\pizza-homepage.png")
 
 ## 🚀 Features
 
