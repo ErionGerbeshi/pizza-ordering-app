@@ -51,3 +51,11 @@ npm start
 - GitHub: [@ErionGerbeshi](https://github.com/ErionGerbeshi)
 - Email: [gerbeshierion19@gmail.com](mailto:gerbeshierion19@gmail.com)
 - LinkedIn: [erion-gerbeshi](https://www.linkedin.com/in/erion-gerbeshi)
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for learning and demonstration purposes only.  
+All code is written by **Erion Gerbeshi** and protected under the [MIT License](LICENSE).  
+Do not use this code for commercial purposes without permission.
