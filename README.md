@@ -46,7 +46,8 @@ npm start
 
 ---
 
-## 🙋 Contact
+## 📬 Contact
 
 - GitHub: [@ErionGerbeshi](https://github.com/ErionGerbeshi)
-- Email: gerbeshierion19@gmail.com
+- Email: [gerbeshierion19@gmail.com](mailto:gerbeshierion19@gmail.com)
+- LinkedIn: [erion-gerbeshi](https://www.linkedin.com/in/erion-gerbeshi)
